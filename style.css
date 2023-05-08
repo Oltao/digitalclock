@@ -17,6 +17,7 @@ body {
 h1 {
     letter-spacing: 5px;
     text-transform: uppercase;
+    color: black;
 }
 
 .clock {
