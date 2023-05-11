@@ -9,10 +9,6 @@ function digitalClock(){
     let s = new Date().getSeconds();
     let ampm = "AM";
 
-    if (h == 0){
-        h = 12;
-    };
-
     if (h > 11) {
         h = h - 12;
         ampm = "PM";
@@ -27,6 +23,10 @@ function digitalClock(){
     if (s < 10){
         s = "0" + s;
     } else s;
+    
+     if (h == 0){
+        h = 12;
+    };
 
     setTimeout(digitalClock);
 
