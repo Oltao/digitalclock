@@ -8,16 +8,16 @@ body {
     align-items: center;
     background: url(image/background.jpg);
     background-size: cover;
-    background-position-x: 100%;
-    background-position-x: 100%;
+    background-position: center;
     color: white;
     overflow: hidden;
+    width: 100%;
 }
 
 h1 {
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: black;
+    text-align: center;
 }
 
 .clock {
@@ -25,7 +25,7 @@ h1 {
 }
 
 .container {
-    margin: 20px;
+    margin: .5em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -69,3 +69,24 @@ h1 {
     letter-spacing: 2px;
     opacity: .8;
 } 
+
+@media (max-width: 600px) {
+
+   .clock {
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .container {
+    margin: .3rem;
+   }
+
+   #ampm {
+    background: green;
+    font-size: 30px;
+    letter-spacing: 2px;
+    opacity: .8;
+    position: relative;
+} 
+  } 
